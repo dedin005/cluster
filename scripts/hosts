@@ -1,0 +1,15 @@
+127.0.0.1	localhost
+
+192.168.1.200   master.audioserver      master
+192.168.1.201   node1.audioserver       node1
+192.168.1.202   node2.audioserver       node2
+192.168.1.203   node3.audioserver       node3
+192.168.1.204   node4.audioserver       node4
+192.168.1.205   node5.audioserver       node5
+192.168.1.206   node6.audioserver       node6
+192.168.1.207   node7.audioserver       node7
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters

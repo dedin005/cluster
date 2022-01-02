@@ -1,0 +1,15 @@
+# The loopback network interface
+auto lo
+iface lo inet loopback
+ 
+# The primary network interface
+auto eno1
+iface eno1 inet static
+ address {{ cluster_ip_address  }}
+ netmask 255.255.255.0
+ gateway {{ gateway }}
+ dns-domain audioserver
+ dns-nameservers {{ nameservers | join(' ') }}
+	post-up /sbin/ethtool -s eno1 wol g
+	post-down /sbin/ethtool -s eno1 wol g
+
